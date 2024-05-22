@@ -1,0 +1,30 @@
+@import "../../styles/flex.scss";
+@import "../../styles/variables.scss";
+
+.navMain{
+    margin-top: 1rem;
+    // border:1px solid blue;
+    @extend .flexRow !optional;
+    justify-content: space-between;
+    .navLeft{
+        margin-left: 1%;
+        @extend .flexRow !optional;
+        gap: .8rem;
+        cursor: pointer;
+    }
+    .navRight{
+        @extend .flexRow !optional;
+        li{
+            cursor: pointer;
+            list-style: none;
+            display: inline;
+            margin-right: 2rem;
+            font-family: 'Poppins-Medium';
+            font-weight: 550;
+            font-size: 1rem;
+        }  
+        .active{
+            color: $color-gray;
+        }
+    }
+}

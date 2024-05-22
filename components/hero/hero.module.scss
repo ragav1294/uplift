@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+@import "../../styles/flex.scss";
+
+.heroMain{
+    font-size: $font-size-hero;
+    text-align: center;
+    // border:1px solid red;
+    h1{
+        font-family: 'Roboto-Header';
+    }
+    .heroBtnContainer{
+        @extend .flexRow !optional;
+        // border:1px solid red;
+        gap:2rem;
+    }
+}
