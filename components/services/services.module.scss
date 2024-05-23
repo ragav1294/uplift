@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/container.scss";
+@import "../../styles/flex.scss";
+
+.contentMain{
+    margin-top: 10vh;
+    @extend .flexRow !optional;
+    justify-content: space-around;
+    p{
+        color:$color-gray;
+        font-size: $font-size-text;
+        line-height: 1.5;
+        margin-top: 3rem;
+    }
+    .contentRight{
+        max-width: 30%;
+        h2{
+            font-family: 'Poppins-Bold';
+            font-weight: 600;
+            font-size: $font-size-subheading;
+        }
+    }
+}
+.imgContainer{
+    height: 480px;
+    width: 480px;
+    border-radius: 5rem;
+    @extend .imgContainer !optional;
+}
+
