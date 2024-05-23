@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+@import "../../styles/container.scss";
+@import "../../styles/flex.scss";
+
+.contactUsHeading{
+    font-weight: 500;
+    font-size: $font-size-subheading;
+}
+
+.gradientContainer{
+    @extend .flexRow !optional;
+    margin: 0 3rem;
+    justify-content: space-around;
+    .leftContainer{
+        margin: 5rem;
+        width: 80%;
+        .rowContainer{
+            @extend .flexRow !optional;
+            justify-content: flex-start;
+            gap:1rem;
+            h3{
+                margin:0;
+            }
+            margin-bottom: 1rem;
+            .iconContainer{
+                @extend .gradientContainer !optional;
+                margin: 0 !important;
+                padding: 1rem;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .rightContainer{
+        background-color: black;
+        border-radius: 5rem;
+        height: 100%;
+        width: 100%;
+        margin: 1rem;
+        color: white;
+        .innerContainer{
+            margin: 2rem 4rem;
+            @extend .flexCol !optional;
+            align-items: flex-start;
+            .heading{
+                margin-left: 35%;
+            }
+            h3{
+                span{
+                    color: red;
+                }
+            }
+            .formContainer{
+                width: 100%;
+                input{
+                    background-color: transparent;
+                    border:none;
+                    border-bottom: 1px solid $color-gray;
+                    width: 100%;
+                    color: white;
+                    font-size: $font-size-text;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+            .btnContainer{
+                margin: 2rem 0;
+                margin-left: 35%;
+            }
+        }
+    }
+}

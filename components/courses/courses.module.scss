@@ -1,0 +1,52 @@
+@import "../../styles/variables.scss";
+@import "../../styles/container.scss";
+@import "../../styles/flex.scss";
+
+.gradientContainer{
+    margin: 2rem;
+    width: 40vw;
+    .contentContainer{
+        @extend .flexCol !optional;
+        gap:2vh;
+        h1{
+            text-align: center;
+            @extend .subHeading !optional;
+            height: 15vh;
+            @extend .flexCol !optional;
+        }
+        .courseName{
+            width: 80%;
+        }
+    }
+    .imgContainer{
+        height: 350px;
+        width: 350px;
+        @extend .imgContainer !optional;
+        padding-top: 2rem;
+    }
+    .courseDetails{
+        font-family: 'Poppins-Semibold';
+        font-size: $font-size-text;
+        // font-weight: normal;
+        width: 80%;
+        text-align: center;
+        @extend .flexRow !optional;
+        padding: 2rem;
+        color: $color-gray;
+    }
+    .btnContainer{
+        padding: 2rem;
+    }
+    .hoverDiv{
+        margin-top: 50%;
+        padding: 1rem;
+        line-height: 1.5;
+        text-align: center;
+        font-size: $font-size-text;
+        // border:1px solid blue;
+    }   
+    transition: all 0.5s ease-in-out;
+}
+.gradientContainer:hover{
+    box-shadow: #{$shadow-x-offset} #{$shadow-y-offset} #{$shadow-blur-radius} #{$hover-color};
+}

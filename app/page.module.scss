@@ -1,0 +1,29 @@
+@import "../styles/variables.scss";
+
+.main{
+    .arrow{
+        position: absolute;
+        right:0;
+    }
+    .upliftBg{
+        position: absolute;
+        left: 0;
+    }
+    .section{
+        margin-bottom: 20vh;
+        // position: relative;
+        .heading{
+            text-align: center;
+            color: $color-secondary;
+            font-family: 'Roboto-Header';
+            font-size: $font-size-heading;
+        }
+    }
+    // border:1px solid white;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10vh;
+    margin: 5rem;
+}

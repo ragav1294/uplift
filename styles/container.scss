@@ -1,0 +1,20 @@
+@import "../styles/variables.scss";
+
+.imgContainer{
+    overflow:hidden;
+    img{
+        height: 100%;
+        width:100%;
+        object-fit:contain;
+    }
+}
+
+.gradientContainer {
+  border-radius: 5rem;
+  box-shadow: #{$shadow-x-offset} #{$shadow-y-offset} #{$shadow-blur-radius} #{$shadow-color};
+}
+
+.subHeading{
+  font-family: 'Poppins-Bold';
+  font-size: $font-size-subheading;
+}
