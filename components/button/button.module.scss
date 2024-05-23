@@ -2,7 +2,7 @@
 @import "../../styles/flex.scss";
 
 .btn{
-    color:white;
+    color:var(--btn-text-color, white);
     background-color: var(--btn-bg-color, #FF3364); 
     border:none;
     padding: 1rem 2rem;

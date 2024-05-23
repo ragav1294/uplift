@@ -15,6 +15,12 @@
     font-style: normal;
   }
 @font-face {
+    font-family: 'Poppins-Semibold';
+    src: url("../styles/fonts/Poppins/Poppins-SemiBold.ttf") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
     font-family: 'Poppins-Regular';
     src: url("../styles/fonts/Poppins/Poppins-Regular.ttf") format('woff2');
     font-weight: normal;

@@ -14,10 +14,9 @@
     }
     .contentRight{
         max-width: 30%;
-        h2{
-            font-family: 'Poppins-Bold';
-            font-weight: 600;
-            font-size: $font-size-subheading;
+        .subHeading{
+          @extend .subHeading !optional;
+          font-weight: 600;
         }
     }
 }
