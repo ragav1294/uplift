@@ -14,15 +14,10 @@
             width: 200px;
             height: 200px;
         }
-        .arrow{
-            z-index: -1;
-        }
-        .upliftBg{
-            z-index: -1;
-        }
     }
     .imgContainer:nth-child(1){
         right:0;
+        z-index: -1;
     }
     .imgContainer:nth-child(2){
         left:0;
@@ -33,6 +28,7 @@
             width: 300px;
             top:30vh;
         }
+        z-index: -1;
     }
     .section{
         margin-bottom: 20vh;
