@@ -1,22 +1,51 @@
 @import "../styles/variables.scss";
+@import "../styles/mixins.scss";
+@import "../styles/container.scss";
 
 .main{
-    .arrow{
+    .imgContainer{
         position: absolute;
+        height: 400px;
+        width: 400px;
+        img{
+            object-fit: cover !important;
+        }
+        @include respond-to(xs){
+            width: 200px;
+            height: 200px;
+        }
+        .arrow{
+            z-index: -1;
+        }
+        .upliftBg{
+            z-index: -1;
+        }
+    }
+    .imgContainer:nth-child(1){
         right:0;
     }
-    .upliftBg{
-        position: absolute;
-        left: 0;
+    .imgContainer:nth-child(2){
+        left:0;
+        width: 500px;
+        height:500px;
+        @include respond-to(xs){
+            height: 300px;
+            width: 300px;
+            top:30vh;
+        }
     }
     .section{
         margin-bottom: 20vh;
+        min-height: 90vh;
         // position: relative;
         .heading{
             text-align: center;
             color: $color-secondary;
             font-family: 'Roboto-Header';
             font-size: $font-size-heading;
+            @include respond-to(xs){
+                font-size: $font-mobile-size-heading;
+            }
         }
     }
     // border:1px solid white;
@@ -26,4 +55,10 @@
     grid-template-columns: 1fr 1fr;
     margin-top: 10vh;
     margin: 5rem;
+    @include respond-to(xs){
+        margin: 10vh 0 0 0 !important;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap:5vh;
+    }
 }

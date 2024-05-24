@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.scss";
 import { Navbar } from "@/components/navbar/navbar";
@@ -5,6 +6,7 @@ import { HeroSection } from "@/components/hero/hero";
 import { Services } from "@/components/services/services";
 import { Courses } from "@/components/courses/courses";
 import { Contact } from "@/components/contact-us/contact";
+import { useRef } from "react";
 
 export default function Home() {
   const services = [
@@ -46,18 +48,38 @@ export default function Home() {
       hoverDetails: "In today's data-driven world, the demand for data scientists and machine learning experts is on the rise. Our course covers essential concepts and tools in data science and machine learning, preparing you for a successful career in this field."
     }
   ];
-  
+
+  const homeRef = useRef(null);
+  const servicesRef = useRef(null);
+  const coursesRef = useRef(null);
+  const FAQRef = useRef(null);
+  const ContactRef = useRef(null);
+
+  const refs = {
+    homeRef,
+    servicesRef,
+    coursesRef,
+    FAQRef,
+    ContactRef
+  };
+
 
   return (
     <div className={styles.main}>
-      <Image src="/arrow.png" alt="arrow-bg" width={400} height={400} className={styles.arrow}/>
-      <Image src="/Uplift-bg.png" alt="arrow-bg" width={500} height={600} className={styles.upliftBg}/>
-     <div className={styles.section}>
-      <Navbar />
+
+      <div className={styles.imgContainer}>
+         <Image src="/arrow.png" alt="arrow-bg" width={400} height={400} className={styles.arrow}/>
+      </div>
+      <div className={styles.imgContainer}>
+         <Image src="/Uplift-bg.png" alt="arrow-bg" width={500} height={600} className={styles.upliftBg}/>
+      </div>
+
+     <div className={styles.section} ref={homeRef}>
+      <Navbar refs={refs}/>
       <HeroSection />
      </div>
       
-      <div className={styles.section}>
+      <div className={styles.section} ref={servicesRef}>
         <h1 className={styles.heading}>WHAT WE OFFER</h1>
         <div className={styles.servicesMain}>
           {services.map((service,index) => (
@@ -72,7 +94,7 @@ export default function Home() {
         </div>
       </div>
       
-      <div className={styles.section}>
+      <div className={styles.section} ref={coursesRef}>
             <h1 className={styles.heading}>OUR COURSES</h1>
             <div className={styles.gridContainer}>
               {courses.map((course,index) => {
@@ -90,7 +112,7 @@ export default function Home() {
             </div>
       </div>
 
-      <div className={styles.section}>
+      <div className={styles.section} ref={ContactRef}>
         <Contact/>
       </div>
 

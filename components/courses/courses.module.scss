@@ -1,10 +1,16 @@
 @import "../../styles/variables.scss";
 @import "../../styles/container.scss";
 @import "../../styles/flex.scss";
+@import "../../styles/mixins.scss";
 
 .gradientContainer{
     margin: 2rem;
     width: 40vw;
+    @include respond-to(xs){
+        width: 80vw;
+        margin: 0;
+    }
+
     .contentContainer{
         @extend .flexCol !optional;
         gap:2vh;
@@ -13,6 +19,9 @@
             @extend .subHeading !optional;
             height: 15vh;
             @extend .flexCol !optional;
+            @include respond-to(xs){
+                height: fit-content;
+            }
         }
         .courseName{
             width: 80%;
@@ -21,6 +30,10 @@
     .imgContainer{
         height: 350px;
         width: 350px;
+        @include respond-to(xs){
+            height: 200px;
+            width: 200px;
+        }
         @extend .imgContainer !optional;
         padding-top: 2rem;
     }

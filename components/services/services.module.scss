@@ -1,10 +1,16 @@
 @import "../../styles/variables.scss";
 @import "../../styles/container.scss";
 @import "../../styles/flex.scss";
+@import "../../styles/mixins.scss";
 
 .contentMain{
     margin-top: 10vh;
     @extend .flexRow !optional;
+    @include respond-to(xs){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     justify-content: space-around;
     p{
         color:$color-gray;
@@ -18,12 +24,21 @@
           @extend .subHeading !optional;
           font-weight: 600;
         }
+        @include respond-to(xs){
+            min-width: 80%;
+            margin: 3rem 2rem;
+        }
     }
 }
 .imgContainer{
     height: 480px;
     width: 480px;
     border-radius: 5rem;
+    @include respond-to(xs){
+        height: 300px;
+        width: 300px;
+        border-radius: 5rem
+    }
     @extend .imgContainer !optional;
 }
 

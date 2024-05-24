@@ -1,5 +1,6 @@
 @import "../../styles/flex.scss";
 @import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
 
 .navMain{
     // border:1px solid blue;
@@ -9,21 +10,33 @@
         margin-left: 1%;
         @extend .flexRow !optional;
         gap: .8rem;
+        @include respond-to(xs){
+            gap:.2rem;
+        }
         cursor: pointer;
     }
     .navRight{
         @extend .flexRow !optional;
-        li{
-            cursor: pointer;
-            list-style: none;
-            display: inline;
-            margin-right: 2rem;
-            font-family: 'Poppins-Medium';
-            font-weight: 550;
-            font-size: 1rem;
-        }  
-        .active{
-            color: $color-gray;
+        cursor: pointer;
+        .desktop{
+            @include respond-to(xs){
+                display: none;
+            }
+            li{
+                list-style: none;
+                display: inline;
+                margin-right: 2rem;
+                font-family: 'Poppins-Medium';
+                font-weight: 550;
+                font-size: 1rem;
+                padding: 1rem;
+            }  
+            .active{
+                color: $color-gray;
+            }
         }
     }
 }
+
+
+  

@@ -18,3 +18,8 @@
   font-family: 'Poppins-Bold';
   font-size: $font-size-subheading;
 }
+.centerContainer {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+}

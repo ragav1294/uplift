@@ -17,11 +17,12 @@ export const Contact=() =>{
     {
       image :"/contact-us/mail.png",
       heading: "Email Us At Us",
-      text : "Upliftedutech@gmail.com",
+      text : "studentsupport@upliftedu.com",
     }
   ];
 
   const form = ["Full Name", "Phone Number", "Message"];
+
   return (
     <div className={styles.gradientContainer}>
         <div className={styles.leftContainer}>
