@@ -2,44 +2,58 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-.navMain{
-    // border:1px solid blue;
+.navMain {
+  @extend .flexRow !optional;
+  justify-content: space-between;
+  position: relative; // Change this to `sticky`
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+//   backdrop-filter: blur(15px);
+  z-index: -1; // Make sure it appears above other elements
+
+  &.sticky {
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 2px -2px $color-gray; // Optional: add a shadow for visual effect
+  }
+
+  .navLeft {
+    margin-left: 1%;
     @extend .flexRow !optional;
-    justify-content: space-between;
-    .navLeft{
-        margin-left: 1%;
-        @extend .flexRow !optional;
-        gap: .8rem;
-        @include respond-to(xs){
-            gap:.2rem;
-        }
-        cursor: pointer;
-        h1{
-            font-family: 'Poppins-Bold';
-        }
+    gap: .8rem;
+    @include respond-to(xs) {
+      gap: .2rem;
     }
-    .navRight{
-        @extend .flexRow !optional;
-        cursor: pointer;
-        .desktop{
-            @include respond-to(xs){
-                display: none;
-            }
-            li{
-                list-style: none;
-                display: inline;
-                margin-right: 2rem;
-                font-family: 'Poppins-Medium';
-                font-weight: 550;
-                font-size: 1rem;
-                padding: 1rem;
-            }  
-            .active{
-                color: $color-gray;
-            }
-        }
+    cursor: pointer;
+
+    h1 {
+      font-family: 'Poppins-Bold';
     }
+  }
+
+  .navRight {
+    @extend .flexRow !optional;
+    cursor: pointer;
+
+    .desktop {
+      @include respond-to(xs) {
+        display: none;
+      }
+
+      li {
+        list-style: none;
+        display: inline;
+        margin-right: 2rem;
+        font-family: 'Poppins-Medium';
+        font-weight: 550;
+        font-size: 1rem;
+        padding: 1rem;
+
+        &.active {
+          color: $color-gray;
+        }
+      }
+    }
+  }
 }
-
-
-  
