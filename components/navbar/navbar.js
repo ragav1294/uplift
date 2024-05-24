@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
-import { HamburgerMenu } from './HamburgerMenu';
+import { Hamburger } from '@/components/Hamburger/HamMenu';
 
 export const Navbar = ({ refs }) => {
   const handleScroll = (ref) => {
@@ -18,7 +18,7 @@ export const Navbar = ({ refs }) => {
       </div>
 
       <div className={styles.navRight}>
-            <HamburgerMenu refs={refs}/>
+            <Hamburger refs={refs}/>
           <ul className={styles.desktop}>
             <li onClick={() => handleScroll(refs.homeRef)}>Home</li>
             <li onClick={() => handleScroll(refs.servicesRef)}>Services</li>
