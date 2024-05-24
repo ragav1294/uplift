@@ -7,8 +7,9 @@
         position: absolute;
         height: 400px;
         width: 400px;
+        // border: 1px solid red;
         img{
-            object-fit: cover !important;
+            object-fit: contain !important;
         }
         @include respond-to(xs){
             width: 200px;
@@ -16,17 +17,28 @@
         }
     }
     .imgContainer:nth-child(1){
-        right:0;
+        right:-100px;
         z-index: -1;
+        height: 500px;
+        width: 500px;
+        @include respond-to(xs){
+            width: 200px;
+            height: 200px;
+            right:0;
+        }
     }
     .imgContainer:nth-child(2){
-        left:0;
-        width: 500px;
-        height:500px;
+        top:-5%;
+        left:-20%;
+        height: 800px;
+        width: 900px;
+        transform: rotate(35deg);
         @include respond-to(xs){
-            height: 300px;
-            width: 300px;
             top:30vh;
+            left:-40%;
+            height: 400px;
+            width: 400px;
+            left:-20%;
         }
         z-index: -1;
     }

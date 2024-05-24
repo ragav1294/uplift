@@ -1,0 +1,28 @@
+@import "../../styles/variables.scss";
+@import "../../styles/flex.scss";
+@import "../../styles/mixins.scss";
+
+.footerMain{
+    .innerContainer{
+        padding: 1rem;
+        background-color: black;
+        color:white;
+        @extend .flexRow !optional;
+        justify-content: space-between;
+        @include respond-to(xs){
+            display: flex;
+            flex-direction: column-reverse;
+            gap:2rem;
+        }
+        .footerRight{
+            text-align: center;
+            @extend .flexRow !optional;
+            gap:2rem;
+        }
+        .socials{
+            @extend .flexRow !optional;
+            gap:1rem;
+        }
+    }
+  
+}

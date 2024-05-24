@@ -7,6 +7,7 @@ import { Services } from "@/components/services/services";
 import { Courses } from "@/components/courses/courses";
 import { Contact } from "@/components/contact-us/contact";
 import { useRef } from "react";
+import Footer from "@/components/footer/footer";
 
 export default function Home() {
   const services = [
@@ -68,10 +69,10 @@ export default function Home() {
     <div className={styles.main}>
 
       <div className={styles.imgContainer}>
-         <Image src="/arrow.png" alt="arrow-bg" width={400} height={400} className={styles.arrow}/>
+         <Image src="/arrow.png" alt="arrow-bg" width={400} height={700} className={styles.arrow}/>
       </div>
       <div className={styles.imgContainer}>
-         <Image src="/Uplift-bg.png" alt="arrow-bg" width={500} height={600} className={styles.upliftBg}/>
+         <Image src="/uplift.png" alt="uplift-bg" width={500} height={500} className={styles.upliftBg}/>
       </div>
 
      <div className={styles.section} ref={homeRef}>
@@ -113,9 +114,13 @@ export default function Home() {
       </div>
 
       <div className={styles.section} ref={ContactRef}>
+        <h1 className={styles.heading}>CONTACT US</h1>
         <Contact/>
       </div>
-
+      
+      <div>
+        <Footer/>
+      </div>
     </div>
   );
 }
