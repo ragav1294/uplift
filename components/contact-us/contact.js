@@ -25,7 +25,7 @@ export const Contact=() =>{
   return (
     <div className={styles.gradientContainer}>
         <div className={styles.leftContainer}>
-           <h3 className={styles.contactUsHeading}>Let's Uplift Your Career</h3>
+           <h3 className={styles.contactUsHeading}>Let&apos;s Uplift Your Career</h3>
 
             {contactUs.map((item,index)=>{
               return (
@@ -44,7 +44,7 @@ export const Contact=() =>{
 
         <div className={styles.rightContainer}>
           <div className={styles.innerContainer}>
-            <h3 className={styles.heading}>Let's Connect</h3>
+            <h3 className={styles.heading}>Let&apos;s Connect</h3>
             
             {form.map((el,inx)=>{
               return (
