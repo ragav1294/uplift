@@ -105,6 +105,7 @@ export default function Home() {
                     courseName={course.courseName}
                     courseDetails={course.courseDetails}
                     hoverDetails={course.hoverDetails}
+                    refElement = {ContactRef}
                     key={index}
                   />
                 )
