@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from './navbar.module.scss';
-import { Hamburger } from '@/components/Hamburger/HamMenu';
+import { Hamburger } from '@/components/Hamburger/hammenu';
 
 export const Navbar = ({ refs }) => {
   const handleScroll = (ref) => {
