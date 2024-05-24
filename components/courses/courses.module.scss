@@ -13,6 +13,7 @@
 
     .contentContainer{
         @extend .flexCol !optional;
+        position: relative;
         gap:2vh;
         h1{
             text-align: center;
@@ -51,6 +52,7 @@
         padding: 2rem;
     }
     .hoverDiv{
+        border: 1px solid white;
         margin-top: 50%;
         padding: 1rem;
         line-height: 1.5;
@@ -58,6 +60,17 @@
         font-size: $font-size-text;
         color: white;
         // border:1px solid blue;
+        span{
+            position: absolute;
+            top: 15%;
+            right:15%;
+            font-size: $font-size-subheading;
+            color: black;
+            display: none;
+            @include respond-to(xs){
+                display: block;
+            }
+        }
     }   
     transition: all 0.5s ease-in-out;
 }

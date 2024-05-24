@@ -35,10 +35,13 @@
         transform: rotate(35deg);
         @include respond-to(xs){
             top:30vh;
-            left:-40%;
             height: 400px;
             width: 400px;
             left:-20%;
+        }
+        @include respond-to(xxs){
+            height: 200px;
+            width: 200px;
         }
         z-index: -1;
     }

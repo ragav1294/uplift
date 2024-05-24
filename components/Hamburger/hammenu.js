@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Hamburger.module.scss'
+import Image from 'next/image'
 
 export const Hamburger = ({refs}) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +16,10 @@ export const Hamburger = ({refs}) => {
     <div className={`${styles.hamburgerMenu}`} onClick={toggleMenu}>
         {!isOpen ? (
             <>
+                {/* <div className={styles.line}></div>
                 <div className={styles.line}></div>
-                <div className={styles.line}></div>
-                <div className={styles.line}></div>
+                <div className={styles.line}></div> */}
+                <Image src="/hamburger.png" alt='hamburger-menu-icon' height={30} width={30}/>
             </>
         ):(
             <>

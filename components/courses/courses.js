@@ -30,6 +30,7 @@ export const Courses = ({image,courseName,courseDetails,hoverDetails})=> {
                 ):(
                     <>
                       <div className={styles.hoverDiv}>
+                        <span onClick={handleMouseLeave}>X</span>
                         <p className={styles.hoverDetails}>{hoverDetails}</p>
                       </div>
                       <div className={styles.btnContainer}><CustomButton text="Enroll Now" bgColor="black" textColor="white" hoverColor="rgb(61, 60, 60)" hoverTextColor="white"/></div>
