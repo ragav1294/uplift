@@ -2,7 +2,7 @@ import styles from "./services.module.scss"
 import Image from 'next/image';
 import { useEffect, useState } from "react";
 
-export const Services = ({image,subHeading,para,index})=>{
+export const Services = ({imageUrl,subHeading,para,index})=>{
     const [isMobile, setIsMobile ] = useState(false);
     useEffect(() => {
         const checkIsMobile = () => {
@@ -27,14 +27,14 @@ export const Services = ({image,subHeading,para,index})=>{
                 </div> 
 
                 <div className={styles.imgContainer}>
-                    <Image src={`/services/${image}`} alt={image} height={400} width={400}/>
+                    <Image src={imageUrl} alt={subHeading} height={400} width={400}/>
                 </div>
             </>
            ): (
             !isMobile && (
             <>
                 <div className={styles.imgContainer}>
-                    <Image src={`/services/${image}`} alt={image} height={500} width={500}/>
+                    <Image src={imageUrl} alt={subHeading} height={500} width={500}/>
                 </div>
 
                 <div className={styles.contentRight}>

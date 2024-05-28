@@ -14,12 +14,12 @@ import FAQ from "@/components/FAQ/FAQ";
 export default function Home() {
   const services = [
     {
-      image: "group-discussion.webp",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fservices%2Fgroup-discussion.webp&w=828&q=75",
       subHeading: "GROUP SESSIONS",
       para: "At Uplift.edu, our mission is to provide mentorship to learners of all backgrounds. We believe that education is the key to success, and we strive to help our students achieve their full potential with the help of industry experts."
     },
     {
-      image: "personal-mentor.png",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fservices%2Fpersonal-mentor.png&w=1080&q=75",
       subHeading: "PERSONAL MENTORSHIP",
       para: "Embark on a journey of growth and discovery. Let's unlock your potential, tap into your creativity, and build a foundation for success. Our tailored mentorship programs and interactive group sessions cover a wide array of subjects such as English speaking, basic programming, web development, AI/ML, and digital marketing."
     },
@@ -27,25 +27,25 @@ export default function Home() {
 
   const courses = [
     {
-      image: "spoken-english.png",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fcourses%2Fspoken-english.png&w=828&q=75",
       courseName: "SPOKEN ENGLISH",
       courseDetails: "Speak with Confidence: Elevate your Spoken English skills with our dynamic course",
       hoverDetails: "English proficiency is crucial in today's globalized world. Our inclusive online English courses cater to individuals' diverse needs and constraints, helping you improve your language skills and boost your confidence."
     },
     {
-      image: "react.png",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fcourses%2Freact.png&w=828&q=75",
       courseName: "FULL STACK DEVELOPMENT",
       courseDetails: "Master Full Stack Development: From Frontend to Backend, become a coding maestro",
       hoverDetails: "In this digital age, web development skills are highly sought after. Our comprehensive course covers both front-end and back-end development, equipping you with the necessary skills to build dynamic and interactive websites."
     },
     {
-      image: "digital-marketing.png",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fcourses%2Fdigital-marketing.png&w=828&q=75",
       courseName: "DIGITAL MARKETING",
       courseDetails: "Craft your online success story: Dive deep into Digital Marketing strategies with us!",
       hoverDetails: "With the rise of digital marketing, businesses are constantly seeking professionals with expertise in this field. Our course covers various digital marketing strategies, including SEO, social media marketing, and email marketing, to help you become a well-rounded digital marketer."
     },
     {
-      image: "data-science.webp",
+      image: "https://uplift-staging.netlify.app/_next/image?url=%2Fcourses%2Fdata-science.webp&w=828&q=75",
       courseName: "DATA SCIENCE AND MACHINE LEARNING",
       courseDetails: "Chart your course in the data revolution: Acquire the skills of Data Science and Machine Learning",
       hoverDetails: "In today's data-driven world, the demand for data scientists and machine learning experts is on the rise. Our course covers essential concepts and tools in data science and machine learning, preparing you for a successful career in this field."
