@@ -1,6 +1,7 @@
 import Head from 'next/head';
 
 export default function HeadPrefetch() {
+  console.log("prefetching..");
   return (
     <Head>
       {/* SERVICES */}
