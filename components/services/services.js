@@ -23,7 +23,7 @@ export const Services = ({image,subHeading,para,index})=>{
             <>
                 <div className={styles.contentRight}>
                     <h2 className={styles.subHeading}>{subHeading}</h2>
-                    <p>{para}</p>
+                    <p className={styles.para}>{para}</p>
                 </div> 
 
                 <div className={styles.imgContainer}>
@@ -39,7 +39,7 @@ export const Services = ({image,subHeading,para,index})=>{
 
                 <div className={styles.contentRight}>
                     <h2 className={styles.subHeading}>{subHeading}</h2>
-                    <p>{para}</p>
+                    <p className={styles.para}>{para}</p>
                 </div>
             </>
             )

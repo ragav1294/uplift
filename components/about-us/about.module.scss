@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+@import "../../styles/container.scss";
+@import "../../styles/flex.scss";
+@import "../../styles/mixins.scss";
+
+.contentMain{
+    margin-top: 10vh;
+    @extend .flexRow !optional;
+    justify-content: space-between;
+    gap:3rem;
+
+    @include respond-to(xs){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left{
+        padding: 2rem;
+        line-height: 1.5;
+    }
+    .right{
+        .imgContainer{
+            height: 600px;
+            width: 600px;
+            border-radius: 5rem;
+            background-color: red;
+            img{
+                object-fit: contain;
+            }
+            @include respond-to(xs){
+                height: 400px;
+                width: 400px;
+                border-radius: 5rem
+            }
+            @extend .imgContainer !optional;
+        }
+    }
+}

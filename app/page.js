@@ -8,6 +8,7 @@ import { Courses } from "@/components/courses/courses";
 import { Contact } from "@/components/contact-us/contact";
 import { useRef } from "react";
 import Footer from "@/components/footer/footer";
+import AboutUs from "@/components/about-us/about-us";
 
 export default function Home() {
   const services = [
@@ -33,7 +34,7 @@ export default function Home() {
     {
       image: "react.png",
       courseName: "FULL STACK DEVELOPMENT",
-      courseDetails: "Speak with Confidence: Elevate your Spoken English skills with our dynamic course",
+      courseDetails: "Master Full Stack Development: From Frontend to Backend, become a coding maestro",
       hoverDetails: "In this digital age, web development skills are highly sought after. Our comprehensive course covers both front-end and back-end development, equipping you with the necessary skills to build dynamic and interactive websites."
     },
     {
@@ -45,7 +46,7 @@ export default function Home() {
     {
       image: "data-science.webp",
       courseName: "DATA SCIENCE AND MACHINE LEARNING",
-      courseDetails: "Speak with Confidence: Elevate your Spoken English skills with our dynamic course",
+      courseDetails: "Chart your course in the data revolution: Acquire the skills of Data Science and Machine Learning",
       hoverDetails: "In today's data-driven world, the demand for data scientists and machine learning experts is on the rise. Our course covers essential concepts and tools in data science and machine learning, preparing you for a successful career in this field."
     }
   ];
@@ -112,6 +113,11 @@ export default function Home() {
               })
               }
             </div>
+      </div>
+
+      <div className={styles.section}>
+          <h1 className={styles.heading}>ABOUT US</h1>
+          <AboutUs/>
       </div>
 
       <div className={styles.section} ref={ContactRef}>

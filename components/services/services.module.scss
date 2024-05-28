@@ -14,11 +14,8 @@
         justify-content: center;
     }
 
-    p{
-        color:$color-gray;
-        font-size: $font-size-text;
-        line-height: 1.5;
-        margin-top: 3rem;
+    .para{
+      @extend .para !optional;
     }
     .contentRight{
         max-width: 30%;
