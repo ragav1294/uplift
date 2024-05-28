@@ -2,22 +2,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import styles from './FAQ.module.scss';
 
-const FAQ = () => {
-    const FaqData = [
-        {
-            question: "Question1",
-            answer: "Answer1"
-        },
-        {
-            question: "Question2",
-            answer: "Answer2"
-        },
-        {
-            question: "Question3",
-            answer: "Answer3"
-        },
-    ];
-
+const FAQ = ({FaqData}) => {
     const [openIndexes, setOpenIndexes] = useState([]);
 
     const toggleOpen = (index) => {

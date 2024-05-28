@@ -10,6 +10,7 @@ import { useRef } from "react";
 import Footer from "@/components/footer/footer";
 import AboutUs from "@/components/about-us/about-us";
 import FAQ from "@/components/FAQ/FAQ";
+import Stories from "@/components/success/stories";
 
 export default function Home() {
   const services = [
@@ -51,6 +52,41 @@ export default function Home() {
       hoverDetails: "In today's data-driven world, the demand for data scientists and machine learning experts is on the rise. Our course covers essential concepts and tools in data science and machine learning, preparing you for a successful career in this field."
     }
   ];
+
+  const FaqData = [
+    {
+        question: "Question1",
+        answer: "Answer1"
+    },
+    {
+        question: "Question2",
+        answer: "Answer2"
+    },
+    {
+        question: "Question3",
+        answer: "Answer3"
+    },
+];
+
+const stories = [
+  {
+    name: "Raji",
+    course: "Spoken English",
+    review: "I always dreamt of working in a multinational company, but my lack of confidence in English held me back. Then I found Uplift Edu's Spoken English course. The personalized sessions and expert trainers helped me improve my language skills and boosted my confidence. I learned about cultural nuances and effective communication techniques, which were invaluable during my job interviews. Thanks to Uplift Edu, I landed my dream job in a multinational company and am excelling in my career."
+  },
+  {
+    name: "Bhuvanesh",
+    course: "Full Stack Web Development",
+    review: "I'm passionate about web development but struggled to find a comprehensive course covering both front-end and back-end development. That's when I discovered Uplift Edu's Full Stack Web Development course. The hands-on training and personalized sessions gave me a deep understanding of web development and helped me build an impressive portfolio. Thanks to Uplift Edu, I secured a job as a full stack developer in a top IT company, and I credit them for my success."
+  },
+  {
+    name: "Kumar",
+    course: "Digital Marketing",
+    review: "With a background in marketing, I wanted to upgrade my skills in the digital world. Uplift Edu's Digital Marketing course exceeded my expectations. The in-depth curriculum and practical training taught me various digital marketing strategies and tools, and how to effectively implement them. Thanks to Uplift Edu, I landed a job as a social media manager in a renowned company. They helped me turn my passion for marketing into a successful career in the digital world."
+  }
+];
+
+
 
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
@@ -117,6 +153,11 @@ export default function Home() {
       </div>
 
       <div className={styles.section}>
+          <h1 className={styles.heading}>SUCCESS STORIES</h1>
+          <Stories stories={stories}/>
+      </div>
+
+      <div className={styles.section}>
           <h1 className={styles.heading}>ABOUT US</h1>
           <AboutUs/>
       </div>
@@ -128,7 +169,7 @@ export default function Home() {
 
       <div className={styles.section} ref={FAQRef}>
         <h1 className={styles.heading}>FREQUENTLY ASKED QUESTIONS</h1>
-        <FAQ/>
+        <FAQ FaqData={FaqData}/>
       </div>
       
       <div>

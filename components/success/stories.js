@@ -1,9 +1,17 @@
-import React from 'react';
+import Image from 'next/image';
+import styles from './stories.module.scss';
 
-const Stories = () => {
+const Stories = ({stories}) => {
     return (
-        <div>
-            
+        <div className={styles.storiesMain}>
+            {stories.map((story,index)=>(
+                <div key={index} className={styles.storyDiv}>
+                    <div className={styles.imgContainer}><Image src="/about.jpeg" alt='story' height={200} width={200}/></div>
+                    <h2 className={styles.subHeading}>{story.name}</h2>
+                    <h3 className={styles.course}>{story.course}</h3>
+                    <p>{story.review}</p>
+                </div>
+            ))}
         </div>
     );
 };
