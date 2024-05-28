@@ -19,11 +19,11 @@
         line-height: 1.5;
     }
     .right{
+        margin: 2rem;
         .imgContainer{
             height: 600px;
             width: 600px;
             border-radius: 5rem;
-            background-color: red;
             img{
                 object-fit: contain;
             }
