@@ -13,7 +13,7 @@ import AboutUs from "@/components/about-us/about-us";
 export default function Home() {
   const services = [
     {
-      image: "personal-mentor.png",
+      image: "group-discussion.webp",
       subHeading: "GROUP SESSIONS",
       para: "At Uplift.edu, our mission is to provide mentorship to learners of all backgrounds. We believe that education is the key to success, and we strive to help our students achieve their full potential with the help of industry experts."
     },
