@@ -28,8 +28,8 @@
                 object-fit: contain;
             }
             @include respond-to(xs){
-                height: 400px;
-                width: 400px;
+                height: 300px;
+                width: 300px;
                 border-radius: 5rem
             }
             @extend .imgContainer !optional;

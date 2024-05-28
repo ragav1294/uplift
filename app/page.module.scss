@@ -7,7 +7,6 @@
         position: absolute;
         height: 400px;
         width: 400px;
-        // border: 1px solid red;
         img{
             object-fit: contain !important;
         }
@@ -24,9 +23,9 @@
         @include respond-to(xs){
             width: 200px;
             height: 200px;
-            right:0;
-            top:10vh;
-        }
+            right:-50px;
+            top:0vh;
+        }   
     }
     .imgContainer:nth-child(2){
         top:-5%;
@@ -36,14 +35,14 @@
         transform: rotate(35deg);
         @include respond-to(xs){
             top:30vh;
-            height: 400px;
-            width: 400px;
+            height: 300px;
+            width: 300px;
             left:-20%;
         }
-        @include respond-to(xxs){
-            height: 200px;
-            width: 200px;
-        }
+        // @include respond-to(xxs){
+        //     height: 200px;
+        //     width: 200px;
+        // }
         z-index: -1;
     }
     .section{
