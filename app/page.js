@@ -77,7 +77,7 @@ export default function Home() {
 
      <div className={styles.section} ref={homeRef}>
       <Navbar refs={refs}/>
-      <HeroSection />
+      <HeroSection refs={refs}/>
      </div>
       
       <div className={styles.section} ref={servicesRef}>

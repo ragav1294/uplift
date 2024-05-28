@@ -6,12 +6,14 @@
 .contentMain{
     margin-top: 10vh;
     @extend .flexRow !optional;
+    justify-content: space-around;
+
     @include respond-to(xs){
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    justify-content: space-around;
+
     p{
         color:$color-gray;
         font-size: $font-size-text;

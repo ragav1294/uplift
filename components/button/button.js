@@ -1,6 +1,7 @@
 import styles from './button.module.scss';
 
-export const CustomButton = ({ text, bgColor = '#FF3364', hoverColor = '#FF6699',hoverTextColor = "black" ,textColor = "white"}) => {
+export const CustomButton = ({ text, bgColor = '#FF3364', hoverColor = 'white',hoverTextColor = "black" ,textColor = "white"}) => {
+
   return (
     <div className={styles.btnMain}>
       <button 

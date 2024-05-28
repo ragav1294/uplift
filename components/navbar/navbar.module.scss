@@ -1,5 +1,6 @@
 @import "../../styles/flex.scss";
 @import "../../styles/variables.scss";
+@import "../../styles/container.scss";
 @import "../../styles/mixins.scss";
 
 .navMain {
@@ -15,9 +16,10 @@
     position: fixed;
     top: 0;
     backdrop-filter: blur(15px);
-    box-shadow: 0 4px 2px -2px $color-gray; 
+    box-shadow: 0 4px 2px 0 rgba(201, 201, 201,0.3); 
     li{
-        background-color: rgb(255, 255, 255, 0.1);
+        background-color: rgba(216, 216, 216, 0.1);
+        border-radius: .5rem;
     }
   }
 
@@ -32,6 +34,13 @@
 
     h1 {
       font-family: 'Poppins-Bold';
+      @include respond-to(xs){
+        font-size: 1.5rem;
+      }
+    }
+    .imgContainer{
+      height: 70px;
+      width: 70px;
     }
   }
 

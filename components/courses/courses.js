@@ -32,12 +32,12 @@ export const Courses = ({image,courseName,courseDetails,hoverDetails,refElement}
                 </div>
                 <div className={styles.courseName}><h1>{courseName}</h1></div>
                 <div className={styles.courseDetails}><p>{courseDetails}</p></div>
-                <div className={styles.btnContainer} onClick={handleMouseEnter}><CustomButton text="Know More" bgColor="black" hoverColor="rgb(61, 60, 60)" hoverTextColor="white"/></div>
+                <div className={styles.btnContainer} onClick={handleMouseEnter}><CustomButton text="Know More" bgColor="black" hoverColor="rgb(61, 60, 60)"/></div>
                 </>
                 ):(
                     <>
                       <div className={styles.hoverDiv}>
-                        <span onClick={handleMouseLeave}>X</span>
+                        <div className={styles.closeContainer}  onClick={handleMouseLeave}><div className={styles.close}>x</div></div>
                         <p className={styles.hoverDetails}>{hoverDetails}</p>
                       </div>
                       <div className={styles.btnContainer} onClick={()=>handleClick(refElement)}><CustomButton text="Enroll Now" bgColor="black" textColor="white" hoverColor="rgb(61, 60, 60)" hoverTextColor="white"/></div>

@@ -49,8 +49,9 @@
     .section{
         margin-bottom: 20vh;
         min-height: 90vh;
+        // border: 1px solid red;
         // position: relative;
-        .heading{
+            .heading{
             text-align: center;
             color: $color-secondary;
             font-family: 'Roboto-Header';
@@ -60,7 +61,7 @@
             }
         }
     }
-    // border:1px solid white;
+
 }
 .gridContainer{
     display: grid;

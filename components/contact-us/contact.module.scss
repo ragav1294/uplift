@@ -52,6 +52,9 @@
         width: 90%;
         margin: 1rem;
         color: white;
+        @include respond-to(xs){
+            border-radius: 2rem;
+        }
         .innerContainer{
             margin: 2rem 4rem;
             @include respond-to(xs){

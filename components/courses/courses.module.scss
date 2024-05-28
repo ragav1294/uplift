@@ -59,16 +59,27 @@
         font-size: $font-size-text;
         color: white;
         // border:1px solid blue;
-        span{
-            position: absolute;
-            top: 15%;
-            right:15%;
-            font-size: $font-size-subheading;
-            color: black;
-            display: none;
-            @include respond-to(xs){
-                display: block;
+        .closeContainer{
+              display: flex;
+                justify-content: center;
+            .close{
+                position: absolute;
+                top: 15%;
+                font-size: $font-size-subheading;
+                background-color: white;
+                box-shadow: 0 4px 2px 1px rgba(201, 201, 201,0.5); 
+                backdrop-filter: blur(15px);
+                padding: .2rem 1rem;
+                border-radius: 50%;
+                color: black;
+                display: none;
+                @include respond-to(xs){
+                    display: block;
+                }
             }
+        }
+        .close:hover{
+            box-shadow: 0 4px 2px 1px $hover-color; 
         }
     }   
     transition: all 0.5s ease-in-out;

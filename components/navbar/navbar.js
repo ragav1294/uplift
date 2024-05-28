@@ -5,6 +5,7 @@ import { Hamburger } from '@/components/Hamburger/hammenu';
 
 export const Navbar = ({ refs }) => {
   const [isSticky, setIsSticky] = useState(false);
+  const [activeItem, setActiveItem] = useState('home'); // Default active item
   const navbarRef = useRef(null);
 
   const handleScroll = () => {
@@ -22,14 +23,17 @@ export const Navbar = ({ refs }) => {
     };
   }, []);
 
-  const handleScrollToSection = (ref) => {
-    if (ref.current) ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const handleScrollToSection = (ref, section) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setActiveItem(section);
+    }
   };
 
   return (
     <div className={`${styles.navMain} ${isSticky && styles.sticky}`} ref={navbarRef}>
       <div className={styles.navLeft}>
-        <div>
+        <div className={styles.imgContainer}>
           <Image src="/Uplift-logo.svg" alt="Uplift Logo" width={100} height={100} />
         </div>
         <h1>Uplift</h1>
@@ -38,11 +42,36 @@ export const Navbar = ({ refs }) => {
       <div className={styles.navRight}>
         <Hamburger refs={refs} />
         <ul className={styles.desktop}>
-          <li onClick={() => handleScrollToSection(refs.homeRef)}>Home</li>
-          <li onClick={() => handleScrollToSection(refs.servicesRef)}>Services</li>
-          <li onClick={() => handleScrollToSection(refs.coursesRef)}>Courses</li>
-          <li onClick={() => handleScrollToSection(refs.FAQRef)}>FAQ</li>
-          <li onClick={() => handleScrollToSection(refs.ContactRef)}>Contact Us</li>
+          <li
+            className={activeItem === 'home' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.homeRef, 'home')}
+          >
+            Home
+          </li>
+          <li
+            className={activeItem === 'services' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.servicesRef, 'services')}
+          >
+            Services
+          </li>
+          <li
+            className={activeItem === 'courses' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.coursesRef, 'courses')}
+          >
+            Courses
+          </li>
+          <li
+            className={activeItem === 'faq' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.FAQRef, 'faq')}
+          >
+            FAQ
+          </li>
+          <li
+            className={activeItem === 'contact' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.ContactRef, 'contact')}
+          >
+            Contact Us
+          </li>
         </ul>
       </div>
     </div>
