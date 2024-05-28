@@ -37,7 +37,7 @@ export const Courses = ({image,courseName,courseDetails,hoverDetails,refElement}
                 ):(
                     <>
                       <div className={styles.hoverDiv}>
-                        <div className={styles.closeContainer}  onClick={handleMouseLeave}><div className={styles.close}>x</div></div>
+                      <div className={styles.closeContainer}  onClick={handleMouseLeave}><div className={styles.close}>x</div></div>
                         <p className={styles.hoverDetails}>{hoverDetails}</p>
                       </div>
                       <div className={styles.btnContainer} onClick={()=>handleClick(refElement)}><CustomButton text="Enroll Now" bgColor="black" textColor="white" hoverColor="rgb(61, 60, 60)" hoverTextColor="white"/></div>
