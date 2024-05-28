@@ -61,13 +61,6 @@ export const Contact=() =>{
                   <div className={styles.contentContainer}>
                     <h3>{item.heading}</h3>
                     <p>{item.text}</p>
-                    {index ==1 &&
-                    (
-                      <div className={styles.imgContainer}>
-                        <Image src="/icons/copy.png" alt="clipboard" width={20} height={20}/>
-                      </div>
-                    )
-                    }
                   </div>
                 </div>
               )

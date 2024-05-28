@@ -57,17 +57,6 @@
         .contentContainer{
             position: relative;
         }
-        .imgContainer{
-            position: absolute;
-            right: 0;
-            margin-left: 1rem;
-            height: 20px;
-            width: 20px;
-            @extend .imgContainer !optional;
-            img{
-                object-fit: contain;
-            }
-        }
     }
 
     .rightContainer{
