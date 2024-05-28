@@ -15,8 +15,8 @@
   &.sticky {
     position: fixed;
     top: 0;
-    // backdrop-filter: blur(15px);
-    background-color: white;
+    backdrop-filter: blur(15px);
+    // background-color: white;
     box-shadow: 0 4px 2px 0 rgba(201, 201, 201,0.3); 
     li{
         border-radius: .5rem;
