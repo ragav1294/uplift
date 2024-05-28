@@ -36,7 +36,7 @@ export const Navbar = ({ refs }) => {
         <div className={styles.imgContainer}>
           <Image src="/Uplift-logo.svg" alt="Uplift Logo" width={100} height={100} />
         </div>
-        <h1>Uplift</h1>
+        <h1>UpliftEdu</h1>
       </div>
 
       <div className={styles.navRight}>

@@ -2,7 +2,7 @@ import "./globals.css";
 import Head from 'next/head';
 
 export const metadata = {
-  title: "UPLIFT- Uplift your education career with us", 
+  title: "UPLIFTEDU- Uplift your education career with us", 
   description: "Uplift your education career with our empowering education services. Discover courses crafted to propel you towards greatness.",
 };
 

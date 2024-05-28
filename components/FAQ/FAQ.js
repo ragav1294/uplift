@@ -38,7 +38,14 @@ const FAQ = () => {
                         <div className={styles.flexRow} onClick={() => toggleOpen(index)}>
                             <h2>{data.question}</h2>
                             <div className={styles.imgContainer}>
-                                <Image src="/icons/dropdown.png" alt="dropdown" height={50} width={50} />
+                                {openIndexes.includes(index) ? 
+                                (
+                                    <Image className={styles.upArrow} src="/icons/dropdown.png" alt="dropdown" height={50} width={50} />
+                                )
+                                :(
+                                    <Image className={styles.downArrow} src="/icons/dropdown.png" alt="dropdown" height={50} width={50} />
+                                )
+                                }
                             </div>
                         </div>
                         <p className={openIndexes.includes(index) ? styles.open : styles.close}>{data.answer}</p>

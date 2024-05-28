@@ -3,7 +3,6 @@
 @import "../../styles/mixins.scss";
 
 .FAQMain{
-    border: 1px solid red;
     margin: 2rem;
     .faqContainer{
         background-color: black;
@@ -23,8 +22,17 @@
                 @extend .imgContainer !optional;
                 img{
                     object-fit: contain;
+                }
+                .downArrow{
                     transform: rotate(90deg);
                 }
+                .upArrow{
+                    transform: rotate(-90deg);
+                }
+            }
+            p{
+                margin-top: 5vh;
+                font-size: $font-size-text;
             }
         }
         .open{
