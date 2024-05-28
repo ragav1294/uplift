@@ -23,6 +23,7 @@
             text-align: center;
             @extend .flexRow !optional;
             gap:2rem;
+            cursor: pointer;
         }
         .socials{
             @extend .flexRow !optional;

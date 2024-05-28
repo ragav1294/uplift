@@ -34,7 +34,7 @@ export const Services = ({image,subHeading,para,index})=>{
             !isMobile && (
             <>
                 <div className={styles.imgContainer}>
-                    <Image src={`/${image}`} alt={image} height={500} width={500}/>
+                    <Image src={`/services/${image}`} alt={image} height={500} width={500}/>
                 </div>
 
                 <div className={styles.contentRight}>

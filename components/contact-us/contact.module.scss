@@ -23,10 +23,21 @@
         @include respond-to(xs){
             margin:5rem 1rem;
         }
+        .modal{
+            background-color: $color-secondary;
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem;
+            width: fit-content;
+            margin-bottom: 1rem;
+            font-size: 15px;
+            font-weight: bold;
+        }
         .rowContainer{
             @extend .flexRow !optional;
             justify-content: flex-start;
             gap:1rem;
+            cursor: pointer;
             h3{
                 margin:0;
             }
@@ -41,6 +52,16 @@
         p{
             @include respond-to(xs){
                word-break: break-word; 
+            }
+            .imgContainer{
+                display: inline-flex;
+                margin-left: 1rem;
+                height: 20px;
+                width: 20px;
+                @extend .imgContainer !optional;
+                img{
+                    object-fit: contain;
+                }
             }
         }
     }
