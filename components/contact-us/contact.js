@@ -58,17 +58,16 @@ export const Contact=() =>{
                   <div className={styles.iconContainer}>
                     <Image src={`${item.image}`} alt={`${item.heading}`} height={40} width={40}/>
                   </div>
-                  <div>
+                  <div className={styles.contentContainer}>
                     <h3>{item.heading}</h3>
-                    <p>{item.text}
+                    <p>{item.text}</p>
                     {index ==1 &&
                     (
                       <div className={styles.imgContainer}>
-                        <Image src="/copy.png" alt="clipboard" width={20} height={20}/>
+                        <Image src="/icons/copy.png" alt="clipboard" width={20} height={20}/>
                       </div>
                     )
                     }
-                    </p>
                   </div>
                 </div>
               )

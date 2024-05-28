@@ -1,0 +1,39 @@
+@import "../../styles/variables.scss";
+@import "../../styles/flex.scss";
+@import "../../styles/mixins.scss";
+
+.FAQMain{
+    border: 1px solid red;
+    margin: 2rem;
+    .faqContainer{
+        background-color: black;
+        color: white;
+        border-radius: 1rem;
+        .content{
+            position: relative;
+            padding: 2rem;
+            .flexRow{
+                justify-content: space-between;
+                @extend .flexRow !optional;
+                cursor: pointer;
+            }
+            .imgContainer{
+                height: 40px;
+                width: 40px;
+                @extend .imgContainer !optional;
+                img{
+                    object-fit: contain;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .open{
+            display: block;
+        }
+        .close{
+            display: none;
+        }
+        margin-bottom: 10vh;
+
+    }
+}

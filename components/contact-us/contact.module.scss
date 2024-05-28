@@ -53,15 +53,19 @@
             @include respond-to(xs){
                word-break: break-word; 
             }
-            .imgContainer{
-                display: inline-flex;
-                margin-left: 1rem;
-                height: 20px;
-                width: 20px;
-                @extend .imgContainer !optional;
-                img{
-                    object-fit: contain;
-                }
+        }
+        .contentContainer{
+            position: relative;
+        }
+        .imgContainer{
+            position: absolute;
+            right: 0;
+            margin-left: 1rem;
+            height: 20px;
+            width: 20px;
+            @extend .imgContainer !optional;
+            img{
+                object-fit: contain;
             }
         }
     }

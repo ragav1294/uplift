@@ -9,6 +9,7 @@ import { Contact } from "@/components/contact-us/contact";
 import { useRef } from "react";
 import Footer from "@/components/footer/footer";
 import AboutUs from "@/components/about-us/about-us";
+import FAQ from "@/components/FAQ/FAQ";
 
 export default function Home() {
   const services = [
@@ -123,6 +124,11 @@ export default function Home() {
       <div className={styles.section} ref={ContactRef}>
         <h1 className={styles.heading}>CONTACT US</h1>
         <Contact/>
+      </div>
+
+      <div className={styles.section}>
+        <h1 className={styles.heading}>FREQUENTLY ASKED QUESTIONS</h1>
+        <FAQ/>
       </div>
       
       <div>

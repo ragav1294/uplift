@@ -23,7 +23,7 @@
         @include respond-to(xs){
             width: 200px;
             height: 200px;
-            right:-50px;
+            right:0;
             top:0vh;
         }   
     }

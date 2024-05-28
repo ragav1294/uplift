@@ -27,7 +27,7 @@ export const Services = ({image,subHeading,para,index})=>{
                 </div> 
 
                 <div className={styles.imgContainer}>
-                    <Image src={`/${image}`} alt={image} height={400} width={400}/>
+                    <Image src={`/services/${image}`} alt={image} height={400} width={400}/>
                 </div>
             </>
            ): (

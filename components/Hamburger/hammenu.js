@@ -17,7 +17,7 @@ export const Hamburger = ({refs}) => {
         {!isOpen ? (
             <>
               <div className={styles.imgContainer}>
-                 <Image src="/hamburger.png" alt='hamburger-menu-icon' height={30} width={30}/>
+                 <Image src="/icons/hamburger.png" alt='hamburger-menu-icon' height={30} width={30}/>
               </div>
             </>
         ):(

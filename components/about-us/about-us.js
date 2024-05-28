@@ -31,7 +31,7 @@ const AboutUs = () => {
             </div>
             <div className={styles.right}>
                 <div className={styles.imgContainer} >
-                    <Image src="/about.jpeg" alt="about-us" height={600} width={400}/>
+                    <Image src="/about.jpeg" alt="about-us" height={600} width={400}  layout="responsive"/>
                 </div>
             </div>
         </div>
