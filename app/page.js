@@ -126,7 +126,7 @@ export default function Home() {
         <Contact/>
       </div>
 
-      <div className={styles.section}>
+      <div className={styles.section} ref={FAQRef}>
         <h1 className={styles.heading}>FREQUENTLY ASKED QUESTIONS</h1>
         <FAQ/>
       </div>

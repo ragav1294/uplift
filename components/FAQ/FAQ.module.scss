@@ -3,11 +3,11 @@
 @import "../../styles/mixins.scss";
 
 .FAQMain{
-    margin: 2rem;
+    margin: 10vh 2rem 0 2rem;
     .faqContainer{
         background-color: black;
         color: white;
-        border-radius: 1rem;
+        border-radius: 3rem;
         .content{
             position: relative;
             padding: 2rem;
@@ -28,7 +28,7 @@
                 }
                 .upArrow{
                     transform: rotate(-90deg);
-                }
+                }          
             }
             p{
                 margin-top: 5vh;
