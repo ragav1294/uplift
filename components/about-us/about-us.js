@@ -8,10 +8,10 @@ const AboutUs = () => {
                 <div className={styles.content}>
                     <p className={styles.para}>
                         At Uplift Edu, we understand the importance 
-                        of English proficiency in today's globalized world.
-                        That's why we have expanded our services to offer
+                        of English proficiency in today&rsquo;s globalized world.
+                        That&rsquo;s why we have expanded our services to offer
                         inclusive English courses online, catering to
-                        individuals' diverse needs and constraints. Our
+                        individuals&rsquo; diverse needs and constraints. Our
                         innovative and effective learning solutions have been
                         trusted by esteemed educational institutions such as
                         SRM, VIT, SA Engineering, and Rajalakshmi, among
