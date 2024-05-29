@@ -71,16 +71,19 @@ export default function Home() {
 const stories = [
   {
     name: "Raji",
+    gender : "female",
     course: "Spoken English",
     review: "I always dreamt of working in a multinational company, but my lack of confidence in English held me back. Then I found Uplift Edu's Spoken English course. The personalized sessions and expert trainers not only improved my language skills but also boosted my confidence. Thanks to Uplift Edu, I landed my dream job and am excelling in my career."
   },
   {
     name: "Bhuvanesh",
+    gender : "male",
     course: "Full Stack Web Development",
     review: "I'm passionate about web development but struggled to find a comprehensive course. Uplift Edu's Full Stack Web Development program provided hands-on training that built my skills and portfolio. This course helped me secure a job as a full stack developer in a top IT company. I credit Uplift Edu for my success."
   },
   {
     name: "Kumar",
+    gender : "male",
     course: "Digital Marketing",
     review: "With a background in marketing, I wanted to upgrade my digital skills. Uplift Edu's Digital Marketing course offered an in-depth curriculum and practical training that taught me various strategies and tools. Thanks to this course, I landed a job as a social media manager in a renowned company, turning my passion into a successful career."
   }
