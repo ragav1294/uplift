@@ -67,25 +67,31 @@ export const Contact=() =>{
             })}
         </div>
 
-        <div className={styles.rightContainer}>
-          <div className={styles.innerContainer}>
-            <h3 className={styles.heading}>Let&apos;s Connect</h3>
-            
-            {form.map((el,inx)=>{
-              return (
-                <div className={styles.formContainer} key={inx}>
-                  <h3>{el}<span>*</span></h3>
-                  <input></input>
-                </div>
-              )
-            })
-          }
-            <div className={styles.btnContainer}>
-              <CustomButton text="Submit" bgColor="white" textColor="black" hoverColor="white"/>
-            </div>
+    <div className={styles.rightContainer}>
+      <div className={styles.innerContainer}>
+        <h3 className={styles.heading}>Let's Connect</h3>
+
+        <form name="uplift-contact-form" data-netlify="true">
+          {form.map((el, inx) => {
+            return (
+              <div className={styles.formContainer} key={inx}>
+                <h3>
+                  {el}
+                  <span>*</span>
+                </h3>
+                <input />
+              </div>
+            );
+          })}
+        </form>
+
+          <div className={styles.btnContainer}>
+            <CustomButton text="Submit" bgColor="white" textColor="black" hoverColor="white" />
           </div>
 
         </div>
+    </div>
+
 
     </div>
   )
