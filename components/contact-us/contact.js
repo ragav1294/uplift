@@ -27,6 +27,7 @@ export const Contact=() =>{
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [showSuccessPopup, setShowSuccessPopup] = useState(false); 
+  const [isLoading,setIsLoading] = useState(false);
   const [ copied,setCopied ] = useState(false);
 
   function handleReset(){
@@ -51,6 +52,7 @@ const handleSubmit = async (event) => {
   };
 
   try {
+      setIsLoading(true);
       const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
           method: 'POST',
           body: JSON.stringify(data),
@@ -69,6 +71,7 @@ const handleSubmit = async (event) => {
   } catch (error) {
           setMessage("Error sending mail");
   } finally{
+      setIsLoading(false);
       handleReset();
       setShowSuccessPopup(true);
     }
@@ -76,7 +79,6 @@ const handleSubmit = async (event) => {
 
 
   const handleClick = (index)=>{
-    console.log(index);
     if( index ==0 ) window.open("https://maps.app.goo.gl/99dzJyA8zmDF4KAPA",'_blank');
     if( index ==1 ){
       setCopied(true);
@@ -120,7 +122,7 @@ const handleSubmit = async (event) => {
       <div className={styles.innerContainer}>
         <h3 className={styles.heading}>Let&rsquo;s Connect</h3>
 
-          {!showSuccessPopup ?  
+          {!showSuccessPopup && !isLoading ?  
           (
             <form method='POST' id="contact-form" onSubmit={handleSubmit}>
                     <div className={styles.formGroup}>
@@ -137,15 +139,19 @@ const handleSubmit = async (event) => {
                     </div>
                     <div className={styles.formGroup}>
                         <label htmlFor="message">Message<span>*</span></label>
-                        <textarea className={styles.textbox} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Send us a message' name="message" />
+                        <input className={styles.textbox} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Send us a message' name="message" />
                     </div>
                     <div className={styles.btnContainer}><button className={styles.submit} type="submit">Submit</button></div>
             </form>
           ):(
+           isLoading ? (
+            <h3>Submitting your Response..</h3>
+           ):(
             <div className={styles.successContainer}>
               <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#FF3364"><path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z"/></svg>
               <h3>Form Submitted SuccessFully</h3>
             </div>
+           ) 
           )
           }
 

@@ -55,18 +55,27 @@ export default function Home() {
 
   const FaqData = [
     {
-      question: "What are the benefits of enrolling in Uplift.edu's mentorship programs?",
-      answer: "Uplift.edu's mentorship programs offer a unique combination of group sessions and personalized mentorship. Group sessions allow you to learn from industry experts and connect with other learners, while personalized mentorship provides you with tailored guidance and support to help you achieve your individual goals."
+      question: "What courses does Uplift Edu offer?",
+      answer: "Uplift Edu provides a range of courses including Spoken English, Full Stack Web Development, Digital Marketing, and Data Science & Machine Learning. Our courses are designed to help you gain in-demand skills and advance your career."
     },
     {
-      question: "Is Uplift.edu suitable for beginners with no prior experience?",
-      answer: "Absolutely! Uplift.edu offers courses designed for all skill levels, from beginners to advanced learners. Our inclusive approach ensures that everyone receives the support they need to succeed."
+      question: "Are the courses online?",
+      answer: "Yes, all our courses are 100% online, allowing you to learn at your own pace and convenience. We offer flexible learning options to fit your schedule."
     },
     {
-      question: "How does Uplift.edu help me achieve career success?",
-      answer: "Uplift.edu equips you with in-demand skills and knowledge through our comprehensive courses and mentorship programs. We also help you build a strong portfolio and provide career guidance to help you land your dream job."
+      question: "How can I contact Uplift Edu for support?",
+      answer: "You can reach us via email at upliftedutech@gmail.com or call us at +91 - 93 63 80 70 80. Our customer support team is available Monday through Friday from 9am to 9pm IST."
+    },
+    {
+      question: "What kind of training methods does Uplift Edu use?",
+      answer: "We offer personalized training sessions with expert trainers to ensure an engaging and effective learning experience. Our courses include interactive sessions, practical exercises, and real-world applications."
+    },
+    {
+      question: "Do you provide certification upon course completion?",
+      answer: "Yes, upon successfully completing a course, you will receive a certification from Uplift Edu, which you can use to demonstrate your skills to potential employers."
     }
-  ];  
+  ];
+  
 
 const stories = [
   {
