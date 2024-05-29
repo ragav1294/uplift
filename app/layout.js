@@ -1,6 +1,6 @@
 import "./globals.css";
 import Head from 'next/head';
-import Script from 'next/script'; // Import Script component
+import Script from 'next/script'; 
 
 export const metadata = {
   title: "UPLIFTEDU- Uplift your education career with us", 

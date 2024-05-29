@@ -69,7 +69,7 @@ export const Contact=() =>{
 
     <div className={styles.rightContainer}>
       <div className={styles.innerContainer}>
-        <h3 className={styles.heading}>Let's Connect</h3>
+        <h3 className={styles.heading}>Let&rsquo;s Connect</h3>
 
         <form name="uplift-contact-form" data-netlify="true">
           {form.map((el, inx) => {
