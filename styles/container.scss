@@ -37,7 +37,8 @@
 }
 .section{
   margin-bottom: 20vh;
-  min-height: 90vh;
+  // min-height: 90vh;
+  height: fit-content;
   .heading{
       @extend .heading !optional;
   }

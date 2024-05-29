@@ -31,6 +31,7 @@
     font-family: 'Poppins-Regular';
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
   }
  
   h2,p{
@@ -45,6 +46,7 @@
 /* Hide scrollbar for Firefox */
 html {
   scrollbar-width: none; 
+  overflow-x: hidden;
 }
 
 /* Hide scrollbar for Internet Explorer and older Edge */

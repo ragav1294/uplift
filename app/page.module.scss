@@ -10,28 +10,29 @@
         img{
             object-fit: contain !important;
         }
-        @include respond-to(xs){
-            width: 200px;
-            height: 200px;
-        }
+ 
     }
     .imgContainer:nth-child(1){
-        right:0;
+        right:-10%;
         z-index: -1;
         height: 500px;
         width: 500px;
         @include respond-to(xs){
             width: 200px;
             height: 200px;
-            right:0;
+            right: 0;
+            img{
+                position: absolute;
+                right:-20%;
+            }
             top:0vh;
         }   
     }
     .imgContainer:nth-child(2){
-        top:-5%;
-        left:-20%;
-        height: 800px;
-        width: 900px;
+        top:10%;
+        left:-10%;
+        height: 600px;
+        width: 600px;
         transform: rotate(35deg);
         @include respond-to(xs){
             top:30vh;
