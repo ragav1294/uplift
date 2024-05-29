@@ -14,12 +14,14 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <body>
+        {children}
         <Script
           src="https://app.netlify.com/js/api/v1/forms.js"
           strategy="beforeInteractive"
         />
-      </Head>
-      <body>{children}</body>
+      </body>
     </html>
   );
 }
