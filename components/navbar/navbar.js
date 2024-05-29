@@ -32,7 +32,7 @@ export const Navbar = ({ refs }) => {
 
   return (
     <div className={`${styles.navMain} ${isSticky && styles.sticky}`} ref={navbarRef}>
-      <div className={styles.navLeft}>
+      <div className={styles.navLeft}  onClick={() => handleScrollToSection(refs.homeRef, 'home')}>
         <div className={styles.imgContainer}>
           <Image src="/Uplift-logo.svg" alt="Uplift Logo" width={100} height={100} />
         </div>

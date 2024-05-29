@@ -16,6 +16,9 @@
     .left{
         padding: 0 4rem;
         line-height: 1.5;
+        @include respond-to(xs){
+            padding: 0 2rem;
+        }
     }
     .right{
         margin: 2rem;

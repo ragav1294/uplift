@@ -49,7 +49,7 @@
             margin: 0;
             @include respond-to(xs){
                 font-size: 15px;
-                padding: .5rem 1rem;
+                padding:1rem 2rem;
             }
         }
         box-shadow: #{$shadow-x-offset} #{$shadow-y-offset} #{$shadow-blur-radius} #{$shadow-color};
