@@ -34,6 +34,11 @@
                 margin-top: 5vh;
                 font-size: $font-size-text;
             }
+            h2{
+                @include respond-to(xs){
+                    font-size: $font-mobile-size-text;
+                }
+            }
         }
         .open{
             display: block;

@@ -58,6 +58,9 @@
             @include respond-to(xs){
                 font-size: $font-mobile-size-heading;
             }
+            @include respond-to(xxs){
+                font-size: 35px;
+            }
         }
     }
 

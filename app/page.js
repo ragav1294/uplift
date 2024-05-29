@@ -55,38 +55,36 @@ export default function Home() {
 
   const FaqData = [
     {
-        question: "Question1",
-        answer: "Answer1"
+      question: "What are the benefits of enrolling in Uplift.edu's mentorship programs?",
+      answer: "Uplift.edu's mentorship programs offer a unique combination of group sessions and personalized mentorship. Group sessions allow you to learn from industry experts and connect with other learners, while personalized mentorship provides you with tailored guidance and support to help you achieve your individual goals."
     },
     {
-        question: "Question2",
-        answer: "Answer2"
+      question: "Is Uplift.edu suitable for beginners with no prior experience?",
+      answer: "Absolutely! Uplift.edu offers courses designed for all skill levels, from beginners to advanced learners. Our inclusive approach ensures that everyone receives the support they need to succeed."
     },
     {
-        question: "Question3",
-        answer: "Answer3"
-    },
-];
+      question: "How does Uplift.edu help me achieve career success?",
+      answer: "Uplift.edu equips you with in-demand skills and knowledge through our comprehensive courses and mentorship programs. We also help you build a strong portfolio and provide career guidance to help you land your dream job."
+    }
+  ];  
 
 const stories = [
   {
     name: "Raji",
     course: "Spoken English",
-    review: "I always dreamt of working in a multinational company, but my lack of confidence in English held me back. Then I found Uplift Edu's Spoken English course. The personalized sessions and expert trainers helped me improve my language skills and boosted my confidence. I learned about cultural nuances and effective communication techniques, which were invaluable during my job interviews. Thanks to Uplift Edu, I landed my dream job in a multinational company and am excelling in my career."
+    review: "I always dreamt of working in a multinational company, but my lack of confidence in English held me back. Then I found Uplift Edu's Spoken English course. The personalized sessions and expert trainers not only improved my language skills but also boosted my confidence. Thanks to Uplift Edu, I landed my dream job and am excelling in my career."
   },
   {
     name: "Bhuvanesh",
     course: "Full Stack Web Development",
-    review: "I'm passionate about web development but struggled to find a comprehensive course covering both front-end and back-end development. That's when I discovered Uplift Edu's Full Stack Web Development course. The hands-on training and personalized sessions gave me a deep understanding of web development and helped me build an impressive portfolio. Thanks to Uplift Edu, I secured a job as a full stack developer in a top IT company, and I credit them for my success."
+    review: "I'm passionate about web development but struggled to find a comprehensive course. Uplift Edu's Full Stack Web Development program provided hands-on training that built my skills and portfolio. This course helped me secure a job as a full stack developer in a top IT company. I credit Uplift Edu for my success."
   },
   {
     name: "Kumar",
     course: "Digital Marketing",
-    review: "With a background in marketing, I wanted to upgrade my skills in the digital world. Uplift Edu's Digital Marketing course exceeded my expectations. The in-depth curriculum and practical training taught me various digital marketing strategies and tools, and how to effectively implement them. Thanks to Uplift Edu, I landed a job as a social media manager in a renowned company. They helped me turn my passion for marketing into a successful career in the digital world."
+    review: "With a background in marketing, I wanted to upgrade my digital skills. Uplift Edu's Digital Marketing course offered an in-depth curriculum and practical training that taught me various strategies and tools. Thanks to this course, I landed a job as a social media manager in a renowned company, turning my passion into a successful career."
   }
 ];
-
-
 
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
