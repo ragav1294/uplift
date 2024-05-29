@@ -18,8 +18,8 @@
         height: 500px;
         width: 500px;
         @include respond-to(xs){
-            width: 200px;
-            height: 200px;
+            width: 300px;
+            height: 300px;
             right: 0;
             img{
                 position: absolute;
@@ -36,9 +36,9 @@
         transform: rotate(35deg);
         @include respond-to(xs){
             top:30vh;
-            height: 300px;
-            width: 300px;
-            left:-20%;
+            height: 400px;
+            width: 400px;
+            left:-30%;
         }
 
         z-index: -1;

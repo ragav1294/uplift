@@ -2,11 +2,9 @@
 @import "../../styles/container.scss";
 @import "../../styles/flex.scss";
 @import "../../styles/mixins.scss";
-
-
   
 .storiesMain{
-    margin: 2rem;
+    margin: 0;
     // @extend .flexRow !optional;
     display: grid;
     grid-auto-flow: column; 
@@ -19,7 +17,7 @@
     }
     gap:2rem;
     overflow-x: auto;
-    padding:5vh;
+    padding:5vh 1vh 5vh 5vh;
     .storyDiv{
         @extend .flexCol !optional;
        text-align: center;
