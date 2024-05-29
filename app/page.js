@@ -115,7 +115,7 @@ const stories = [
          <Image src="/arrow.png" alt="arrow-bg" width={400} height={700} className={styles.arrow}/>
       </div>
       <div className={styles.imgContainer}>
-         <Image src="/uplift.png" alt="uplift-bg" width={500} height={500} className={styles.upliftBg}/>
+         <Image src="/Uplift.jpeg" alt="uplift-bg" width={500} height={500} className={styles.upliftBg}/>
       </div>
 
      <div className={styles.section} ref={homeRef}>

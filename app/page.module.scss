@@ -29,10 +29,10 @@
         }   
     }
     .imgContainer:nth-child(2){
-        top:10%;
-        left:-10%;
-        height: 600px;
-        width: 600px;
+        top:-8%;
+        left:-15%;
+        height: 700px;
+        width: 700px;
         transform: rotate(35deg);
         @include respond-to(xs){
             top:30vh;
