@@ -91,12 +91,16 @@ const stories = [
   const coursesRef = useRef(null);
   const FAQRef = useRef(null);
   const ContactRef = useRef(null);
+  const storiesRef = useRef(null);
+  const aboutRef = useRef(null);
 
   const refs = {
     homeRef,
     servicesRef,
     coursesRef,
+    storiesRef,
     FAQRef,
+    aboutRef,
     ContactRef
   };
 
@@ -116,7 +120,7 @@ const stories = [
       <HeroSection refs={refs}/>
      </div>
       
-      <div className={styles.section} ref={servicesRef}>
+      <div className={styles.section2} ref={servicesRef}>
         <h1 className={styles.heading}>WHAT WE OFFER</h1>
         <div className={styles.servicesMain}>
           {services.map((service,index) => (
@@ -131,7 +135,7 @@ const stories = [
         </div>
       </div>
       
-      <div className={styles.section} ref={coursesRef}>
+      <div className={styles.section2} ref={coursesRef}>
             <h1 className={styles.heading}>OUR COURSES</h1>
             <div className={styles.gridContainer}>
               {courses.map((course,index) => {
@@ -150,22 +154,22 @@ const stories = [
             </div>
       </div>
 
-      <div className={styles.section}>
+      <div className={styles.section2} ref={storiesRef}>
           <h1 className={styles.heading}>SUCCESS STORIES</h1>
           <Stories stories={stories}/>
       </div>
 
-      <div className={styles.section}>
+      <div className={styles.section2} ref={aboutRef}>
           <h1 className={styles.heading}>ABOUT US</h1>
           <AboutUs/>
       </div>
 
-      <div className={styles.section} ref={ContactRef}>
+      <div className={styles.section2} ref={ContactRef}>
         <h1 className={styles.heading}>CONTACT US</h1>
         <Contact/>
       </div>
 
-      <div className={styles.section} ref={FAQRef}>
+      <div ref={FAQRef}>
         <h1 className={styles.heading}>FREQUENTLY ASKED QUESTIONS</h1>
         <FAQ FaqData={FaqData}/>
       </div>

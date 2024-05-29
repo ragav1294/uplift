@@ -46,23 +46,15 @@
         z-index: -1;
     }
     .section{
-        margin-bottom: 20vh;
-        min-height: 90vh;
-        // border: 1px solid red;
-        // position: relative;
-            .heading{
-            text-align: center;
-            color: $color-secondary;
-            font-family: 'Roboto-Header';
-            font-size: $font-size-heading;
-            @include respond-to(xs){
-                font-size: $font-mobile-size-heading;
-            }
-            @include respond-to(xxs){
-                font-size: 35px;
-            }
-        }
+        @extend .section !optional;
     }
+    .section2{
+        min-height: fit-content !important;
+        @extend .section !optional;
+    }
+    .section2:last-child {
+        margin-bottom: 0 !important;
+    }      
 
 }
 .gridContainer{
@@ -76,4 +68,7 @@
         place-items: center;
         gap:5vh;
     }
+}
+.heading{
+    @extend .heading !optional;
 }

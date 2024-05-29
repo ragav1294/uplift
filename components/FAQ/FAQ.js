@@ -25,7 +25,7 @@ const FAQ = ({FaqData}) => {
                             <div className={styles.imgContainer}>
                                 {openIndexes.includes(index) ? 
                                 (
-                                    <Image className={styles.upArrow} src="/icons/dropdown.png" alt="dropdown" height={50} width={50} />
+                                    <Image className={styles.upArrow} src="/icons/dropdown.png" alt="dropdown" height={50} width={50} layout='responsive'/>
                                 )
                                 :(
                                     <Image className={styles.downArrow} src="/icons/dropdown.png" alt="dropdown" height={50} width={50} />

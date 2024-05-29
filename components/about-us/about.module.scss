@@ -4,7 +4,6 @@
 @import "../../styles/mixins.scss";
 
 .contentMain{
-    margin-top: 10vh;
     @extend .flexRow !optional;
     justify-content: space-between;
     gap:3rem;

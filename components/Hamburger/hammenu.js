@@ -31,7 +31,8 @@ export const Hamburger = ({refs}) => {
              <li onClick={() => handleScroll(refs.homeRef)}>Home</li>
             <li onClick={() => handleScroll(refs.servicesRef)}>Services</li>
             <li onClick={() => handleScroll(refs.coursesRef)}>Courses</li>
-            <li onClick={() => handleScroll(refs.FAQRef)}>FAQ</li>
+            <li onClick={() => handleScroll(refs.storiesRef)}>Stories</li>
+            <li onClick={() => handleScroll(refs.aboutRef)}>About Us</li>
             <li onClick={() => handleScroll(refs.ContactRef)}>Contact Us</li>
         </ul> 
       }

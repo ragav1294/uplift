@@ -61,10 +61,16 @@ export const Navbar = ({ refs }) => {
             Courses
           </li>
           <li
-            className={activeItem === 'faq' ? styles.active : ''}
-            onClick={() => handleScrollToSection(refs.FAQRef, 'faq')}
+            className={activeItem === 'stories' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.storiesRef, 'stories')}
           >
-            FAQ
+            Stories
+          </li>
+          <li
+            className={activeItem === 'about' ? styles.active : ''}
+            onClick={() => handleScrollToSection(refs.aboutRef, 'about')}
+          >
+            About Us
           </li>
           <li
             className={activeItem === 'contact' ? styles.active : ''}

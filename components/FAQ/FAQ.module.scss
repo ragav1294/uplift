@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 @import "../../styles/flex.scss";
 @import "../../styles/mixins.scss";
+@import "../../styles/container.scss";
 
 .FAQMain{
     margin: 10vh 2rem 0 2rem;
@@ -17,11 +18,20 @@
                 cursor: pointer;
             }
             .imgContainer{
-                height: 40px;
-                width: 40px;
+                height: 30px;
+                width: 30px;
+                overflow: hidden;
                 @extend .imgContainer !optional;
                 img{
                     object-fit: contain;
+                }
+                @include respond-to(xs){
+                    height: auto;
+                    width: 20%;
+                }
+                @include respond-to(xxs){
+                    height: auto;
+                    width: 30%;
                 }
                 .downArrow{
                     transform: rotate(90deg);
@@ -46,7 +56,6 @@
         .close{
             display: none;
         }
-        margin-bottom: 10vh;
-
+        margin-bottom: 5vh;
     }
 }
