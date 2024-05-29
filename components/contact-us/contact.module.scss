@@ -72,33 +72,80 @@
         .innerContainer{
             margin: 2rem 4rem;
             @include respond-to(xs){
-                margin: 1rem 3rem;
+                margin: 1rem;
             }
             @extend .flexCol !optional;
-            align-items: flex-start;
+            // align-items: flex-start;
             .heading{
                 @extend .centerContainer !optional;
             }
             h3{
                 color: white;
-                span{
-                    color: red;
-                }
             }
             form{
-                border: 1px solid red;
+                font-size: $font-size-text;
+                color: white;
+                // border: 1px solid red;
                 width: 100%;
+                .formGroup{
+                    @extend .flexRow !optional;
+                    justify-content: center;
+                }
+                label{
+                    display: inline-flex;
+                    width: 50%;
+                    margin: .5rem;
+                    span{
+                        color: red;
+                    }
+                    @include respond-to(xs){
+                        font-size: 18px;
+                    }
+                }
+                textarea{
+                    margin: .5rem;
+                    width: 100%;
+                    background-color: transparent;
+                    color: white;
+                }
                 input{
                     background-color: transparent;
                     border:none;
                     border-bottom: 1px solid $color-gray;
                     width: 100%;
                     color: white;
-                    font-size: $font-size-text;
+                    font-size: 18px;
                     &:focus{
                         outline: none;
                     }
                 }
+                .btnContainer{
+                    width: 100%;
+                    @extend .flexRow !optional;
+                }
+                button{
+                    border:none;
+                    padding: 1rem 2rem;
+                    border-radius: 5rem;
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    text-align: left;
+                    transition: all 0.5s ease-in-out;
+                }
+                button:hover {
+                    background-color: transparent; 
+                    color : white; 
+                    border:1px solid white;
+                    box-shadow: 0 4px 2px 1px rgba(255, 255, 255, 0.4);
+                }
+            }
+            .successContainer{
+                @extend .flexCol !optional;
+                svg{
+                    height: 44px;
+                    width: 44px;
+                }
+                text-align: center;
             }
             .btnContainer{
                 margin: 2rem 0;
