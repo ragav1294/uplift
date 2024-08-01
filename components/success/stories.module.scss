@@ -3,50 +3,87 @@
 @import "../../styles/flex.scss";
 @import "../../styles/mixins.scss";
 
-.storiesMain{
+.storiesMain {
     margin: 0;
-    display: grid;
-    grid-auto-flow: column; 
-    grid-auto-columns: minmax(40%, 1fr);
-    @include respond-to(xs){
-        grid-auto-columns: minmax(80%,1fr);
-        padding: 1vh;
-        margin:0 .5rem;
+    display: flex;
+    flex-direction: row;
+
+    @include respond-to(xs) {
+        flex-direction: column;
+        gap:10vh;
+        padding: 2rem;
     }
-    gap:10%;
+
+    .subHeading {
+        @include respond-to(xs) {
+            font-size: $font-mobile-size-text;
+        }
+    }
+    gap:3%;
     overflow-x: auto;
     padding:5vh 1vh 5vh 5vh;
-    .storyDiv{
+
+    .storyDiv {
         @extend .flexCol !optional;
-       text-align: center;
+        justify-content: flex-start;
+        text-align: center;
         border-radius: 3rem;
-        min-height: 90vh;
-        @include respond-to(xs){
+
+        // min-width: 100%;
+        @include respond-to(xs) {
             min-width: 100%;
         }
-        .imgContainer{
-            height: 40%;
-            width: auto;
-            @include respond-to(xs){
-                height: auto;
-                width: 80%;
+
+        .sucessTop {
+            width: 90%;
+            @extend .flexRow !optional;
+            justify-content: flex-start;
+            margin-left: 5%;
+            gap: 2rem;
+
+            .storyNameDiv {
+                @extend .flexCol !optional;
+                align-items: flex-start;
+
+                .subHeading {
+                    font-size: 22px;
+                }
+
+                h3 {
+                    margin: 0;
+                }
+
+                text-align: left;
             }
-            @extend .imgContainer !optional;
+        }
+
+        .imgContainer {
+            height: 10vh;
+            width: auto;
+            // @include respond-to(xs) {
+            //     height: 10%;
+            //     width: auto;
+            // }
+           @extend .imgContainer !optional;
             border-radius: 50%;
             margin: 5vh 0;
         }
-        .course{
-            color:$color-secondary;
+
+        .course {
+            color: $color-secondary;
         }
-        .para{
-            padding:1rem 2rem;
-            text-align: center;
+
+        .para {
+            padding: 0 3rem 2rem 3rem;
+            text-align: left;
             margin: 0;
-            @include respond-to(xs){
+
+            @include respond-to(xs) {
                 font-size: 15px;
-                padding:1rem 2rem;
+                padding: 1rem 2rem;
             }
         }
+
         box-shadow: #{$shadow-x-offset} #{$shadow-y-offset} #{$shadow-blur-radius} #{$shadow-color};
     }
 }
