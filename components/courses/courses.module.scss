@@ -5,7 +5,7 @@
 
 .gradientContainer{
     margin: 2rem;
-    width: 40vw;
+    width: 35vw;
     @include respond-to(xs){
         width: 80vw;
         margin: 0;
@@ -29,8 +29,8 @@
         }
     }
     .imgContainer{
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         img{
             object-fit: contain;
         }
@@ -39,7 +39,7 @@
             width: 200px;
         }
         @extend .imgContainer !optional;
-        padding-top: 2rem;
+        // padding-top: 2rem;
     }
     .courseDetails{
         font-family: 'Poppins-Semibold';
