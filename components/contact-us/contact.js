@@ -18,7 +18,7 @@ export const Contact=() =>{
     {
       image :"/contact-us/mail.png",
       heading: "Email Us At Us",
-      text : "studentsupport@upliftedu.com",
+      text : "contact@upliftedu.in",
     }
   ];
 
@@ -40,9 +40,9 @@ const handleSubmit = async (event) => {
   event.preventDefault();
 
   const data = {
-      service_id: 'template_ezuinxm',
+      service_id: 'uplift_mail',
       template_id: 'uplift-form',
-      user_id: 'p2-JTo_GIA6f-h01b',
+      user_id: 'o4FKBTX-VqdkYFEcx',
       template_params: {
           from_name: name,
           mail: email,
